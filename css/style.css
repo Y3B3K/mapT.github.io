@@ -1,0 +1,390 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+   body {
+   background-color: white;
+   width: 100%;
+   height: 100%;
+   align-content: space-between;
+
+
+
+ }
+ ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #828282;
+ }
+ a {
+   text-decoration: none;
+ }
+ li{
+   float: left;
+ }
+ li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   margin: 0;
+ }
+ li a:hover {
+   background-color: #111;
+ }
+ iframe{
+   align-content: center;
+ }
+ footer{
+   background-color: #828282;
+   padding: 3px;
+   color: white;
+   text-align: center;
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-shrink: 0;
+   flex-grow: 1;
+   bottom: 0;
+   position: static;
+   font-size: 15px;
+   width: 100%
+
+ }
+ .wraper{
+   display:table;
+   height:100%;
+ }
+ .gradient{
+   background: rgb(255,255,255);
+ background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 100%);
+ background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 100%);
+ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#c1c1c1",GradientType=1);
+    min-height: 100%;
+    width: 100%;
+ }
+ .Map{
+   width:40vw;
+   height: 100vh;
+     border: 5px solid #828282;
+     padding: 10px;
+     margin-top:  5px;
+     margin-bottom: 5px;
+   }
+.Mo{
+  display:flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.container{
+  width: 1670px;
+  margin:0 auto;
+  min-height:100% ;
+  flex-direction: column;
+  vertical-align: middle;
+  height: 100%;
+  display: flex;
+
+}
+.blue-marker{
+  text-align: left;
+  width: 35vw;
+  height: 40px;
+  background: url('../img/blue.svg') no-repeat left;
+  vertical-align: middle;
+  display:flex;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.red-marker{
+  text-align: left;
+  width: 35vw;
+  height: 40px;
+  background: url('../img/red.svg') no-repeat left;
+  vertical-align: middle;
+  display:flex;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+.pink-marker{
+  text-align: left;
+  width: 35vw;
+  height: 40px;
+  background: url('../img/pink.svg') no-repeat left;
+  vertical-align: middle;
+  display:flex;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+.purple-marker{
+  text-align: left;
+  width: 35vw;
+  height: 40px;
+  background: url('../img/purple.svg') no-repeat left;
+  vertical-align: middle;
+  display:flex;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+.black-marker{
+  text-align: left;
+  width: 35vw;
+  height: 40px;
+  background: url('../img/black.svg') no-repeat left;
+  vertical-align: middle;
+  display:flex;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+.green-marker{
+  text-align: left;
+  width: 35vw;
+  height: 40px;
+  background: url('../img/green.svg') no-repeat left;
+  vertical-align: middle;
+  display:flex;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.orange-marker{
+  text-align: left;
+  width: 35vw;
+  height: 40px;
+  background: url('../img/orange.svg') no-repeat left;
+  vertical-align: middle;
+  display:flex;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 1200px){
+  .container {
+    width: 1060px;
+  }
+
+}
+
+
+@media screen and (max-width: 810px){
+  .container {
+    height: 300px;
+  }
+  .markers{
+    max-height: 310px;
+  }
+  .green-marker{
+    width:70%;
+ }
+ .purple-marker{
+   width:70%;
+}
+ .pink-marker{
+  width:70%;
+}
+ .orange-marker{
+  width:70%;
+}
+ .black-marker{
+  width:70%;
+}
+ .red-marker{
+  width:70%;
+}
+.blue-marker{
+  width:70%;
+}
+}
+.survey{
+  margin-left: 25px;
+}
+.markers{
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+}
+.header{
+  padding: auto;
+
+}
+.main{
+  overflow: hidden;
+  display: flex;
+
+  margin:auto;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100%;
+}
+
+.blocks{
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom:  10vh;
+}
+.roundtxt{
+  border: 3px   solid #828282;
+  border-radius: 5px;
+  width: 700px;
+  background-color: #828282;
+  color: white;
+  font-size: 140%;
+}
+h2 a:link, h2 a:visited{
+  background-color: #828282;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+h2 a:hover, h2 a:active{
+  background-color: #111
+}
+p a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+p a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+@media screen and (max-width: 992px){
+  .container{
+    width: 98%;
+  }
+  .roundtxt{
+    width: 650px;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+  .container {
+    width: 98%;
+    max-height: 275px;
+  }
+  .roundtxt{
+    width:75%;
+    height:85%;
+    font-size: 2vw;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+  }
+  h2 a:link, h2 a:visited{
+    padding: 3px 2px;
+  }
+  img{
+    width:100px;
+    height:100px;
+  }
+  .markers{
+    max-height: 310px;
+  }
+  .green-marker{
+    font-size: 11px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 35px;
+ }
+ .purple-marker{
+   font-size: 11px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   width: 35px;
+}
+ .pink-marker{
+  font-size: 11px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 35px;
+}
+ .orange-marker{
+  font-size: 11px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 35px;
+}
+ .black-marker{
+   font-size: 11px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   width: 35px;
+}
+ .red-marker{
+   font-size: 11px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   width: 35px;
+}
+.blue-marker{
+  font-size: 11px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+h1{
+  font-size: 15px;
+}
+ .Map{
+   width:63%;
+ }
+
+}
+@media screen and (max-width: 380px){
+  .container {
+    width: 98%;
+    max-height: 250px;
+  }
+  .roundtxt{
+    width: 80%;
+    height: 190px;
+    font-size: 15px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+  img{
+    width: 90px;
+    height: 90px;
+  }
+
+}
+
+@media screen and (max-width: 576px){
+  .container {
+    width: 90%;
+  }
+  li a{
+    font-size: 13px;
+  }
+}
+p a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+@media screen and (min-width: 1300px){
+  .blocks{
+    height:240px;
+  }
+  }
+}
+@media screen and (min-width:1000px){
+  .Map{
+    width: 85%;
+    height: 55%;
+  }
+
+}
